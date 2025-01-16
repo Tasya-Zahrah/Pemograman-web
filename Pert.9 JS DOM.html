@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh DOM</title>
+</head>
+<body>
+    <h1 id="header">Hello, world!</h1>
+    <button onclick="changeText()">change Text</button>
+
+    <script>
+        function changeText() {
+           // document.getElementById('header').innerHTML = "Hello, JavaScript!";
+
+           // let header = document.getElementById('header');
+           // header.innerHTML = header.nodeType;
+
+           let element = document.createElement('h2');
+           element.innerHTML = 'Ini Element Baru';
+           document.body.appendChild(element);
+        }
+    </script>
+</body>
+</html>
